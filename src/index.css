@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 45 40% 85%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 45 40% 85%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 45 40% 85%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 45 35% 75%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 45 20% 60%;
+
+    --accent: 0 65% 35%;
+    --accent-foreground: 45 40% 95%;
+
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 45 40% 98%;
+
+    --success: 120 60% 45%;
+    --success-foreground: 45 40% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 43 74% 49%;
+
+    --radius: 0.75rem;
+
+    --gold: 43 74% 49%;
+    --gold-light: 45 60% 75%;
+    --gold-dark: 43 50% 35%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: "Roboto", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 20px hsla(var(--gold), 0.4);
+  }
+
+  .gold-text-glow {
+    text-shadow: 0 0 10px hsla(var(--gold), 0.6);
+  }
+}
